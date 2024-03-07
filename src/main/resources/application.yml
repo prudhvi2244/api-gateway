@@ -15,13 +15,3 @@ spring:
           uri: lb://PAYMENT-SERVICE
           predicates:
             - Path= /payment/**
-
-eureka:
-  instance:
-    hostname: localhost
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
-
